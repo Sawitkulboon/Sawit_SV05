@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sawit_SV03</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: #0d0d57;
+        }
+
+        .hr2 {
+            margin: 100px;
+        }
+
+        .navbar-section {
+            display: flex;
+            background-color: #060135;
+            width: 100%;
+            height: 20px;
+            padding: 20px 0px;
+            margin: auto;
+        }
+
+
+
+        .menu-bar1 {
+            flex: 1;
+            display: flex;
+            padding: 0px 50px;
+            justify-content: start;
+            align-items: center;
+            color: #ffffff;
+        }
+
+        .menu-bar2 {
+            font-family: inter;
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0px 0px;
+            padding: 0px 50px;
+
+        }
+
+        .menu-bar2 a {
+            font-family: inter;
+            color: #ffffff;
+            justify-content: space-between;
+            text-decoration: none;
+            padding: 0px 10px;
+        }
+
+        .menu-bar2 :hover {
+            color: orange;
+            background: linear-gradient(25deg, yellow, orangered);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: translateY(-2px);
+        }
+
+        .Work-section {
+            display: flex;
+            justify-content: space-between;
+            color: #ffffff;
+            padding: 100px 500px;
+        }
+
+        .Work-section1 {
+            padding: 0px 0px;
+        }
+
+        .Work-section1 h1 {
+            font-family: Bebas Neue;
+            font-size: 80px;
+            padding: 0px 0px;
+            margin-left: 0px;
+        }
+
+        .Work-section1 p {
+            margin: 00px;
+            padding: 0px;
+        }
+
+        .Contact {
+            display: flex;
+            padding: 50px 0px;
+        }
+
+        .Contact h3 {
+            display: inline block;
+            background-color: #7a99e9;
+            border-radius: 50px;
+            margin: 0px;
+            padding: 20px 30px;
+            font-size: 20px;
+        }
+
+        .Contact h3:hover {
+            cursor: pointer;
+            transform: translateY(-5px);
+        }
+
+        .img1 {
+            padding: 0px 100px;
+        }
+
+        .icon-bar a {
+            display: inline block;
+            background-color: #222222;
+            border-radius: 50px;
+            margin: 10px 10px;
+            padding: 10px 10px;
+            font-size: 40px;
+        }
+        
+
+        .About {
+            display: flex;
+        }
+
+        .About-me1 {
+            flex-direction: column;
+            margin: 60px;
+        }
+
+        .About-me1 p {
+            color: #ffffff;
+            padding: 0px 0px;
+            margin-right: 500px;
+        }
+
+        .TTT {
+            margin-right: 500px;
+            padding: 0px;
+            font-size: 30px;
+            color: #ffffff;
+        }
+
+        .About h1 {
+            font-family: Bebas Neue;
+            color: #ffffff;
+            font-size: 80px;
+            padding: 50px 500px;
+        }
+
+        .img-resume {
+            display: flex;
+            justify-content: center;
+        }
+
+        .resume {
+            display: flex;
+            padding: 50px 0px;
+        }
+
+        .resume h3 {
+            display: inline block;
+            background-color: #7a99e9;
+            border-radius: 50px;
+            margin: 0px;
+            padding: 20px 30px;
+            font-size: 20px;
+        }
+        .resume h3:hover{
+            cursor: pointer;
+            transform: translateY(-5px);
+        }
+
+        .resume a {
+            display: inline block;
+            background-color: #222222;
+            border-radius: 50px;
+            margin: 10px 10px;
+            padding: 10px 10px;
+            font-size: 40px;
+        }
+
+        .my-cap {
+            display: flex block;
+            color: #ffffff;
+        }
+
+        .my-cap1 h1 {
+            margin-left: 500px;
+            margin-right: 200px;
+            padding: 0px 40px;
+            font-size: 80px;
+            font-family: Bebas Neue;
+        }
+
+        .my-cap2 {
+            width: 700px;
+            margin: 50px 20px;
+        }
+
+        .my-cap2 p {
+            font-size: 16px;
+            padding: 0px 20px;
+        }
+
+        .my-cap3 {
+            background-color: #0d0d57;
+            margin: 10px 10px;
+        }
+
+        .my-cap3 a {
+            display: inline-block;
+            border: solid #6b0303;
+            background-color: #0d0d57;
+            border-radius: 50px;
+            color: #ffffff;
+            gap: 16px;
+            margin: 10px 10px;
+            padding: 10px 20px;
+            font-size: 20px;
+            text-decoration: none;
+
+        }
+        .my-cap3 a:hover{
+            cursor: pointer;
+            transform: translateY(-5px);
+            
+        }
+
+
+
+        .my-ex1 {
+            display: flex block;
+        }
+
+        .my-ex1 h1 {
+            display: flex block;
+            width: 650px;
+            margin-left: 500px;
+            margin-right: 0px;
+            padding: 0px 40px;
+            font-size: 80px;
+            font-family: Bebas Neue;
+            color: #ffffff;
+        }
+
+        .my-ex2 {
+            height: px;
+            width: 700px;
+            margin-top: 40px;
+        }
+
+        .my-ex2 h3 {
+            display: inline-block;
+            margin-right: 350px;
+            font-size: 24px;
+            color: #ffffff;
+        }
+
+        .my-ex2 p {
+            display: inline-block;
+            color: #c7c7c7;
+        }
+
+        .my-ex3 {
+            display: inline block;
+            margin-top: px;
+            width: 700px;
+        }
+
+        .my-ex4 h3 {
+            display: inline-block;
+            margin-right: 380px;
+            font-size: 24px;
+            color: #ffffff;
+        }
+
+        .my-ex4 p {
+            display: inline-block;
+            color: #c7c7c7;
+        }
+
+        .my-ex5 {
+            display: inline block;
+            margin-top: px;
+            width: 700px;
+        }
+
+        .connect {
+            display: flex block;
+        }
+
+        .connect1 {
+            width: 650px;
+            margin-left: 500px;
+            margin-right: 0px;
+            padding: 0px 40px;
+        }
+
+        .connect1 h1 {
+            font-size: 80px;
+            font-family: Bebas Neue;
+            color: #ffffff;
+        }
+
+        .connect1 p {
+            color: #ffffff;
+        }
+
+        .icon a {
+            display: inline-block;
+            padding-top: 20px;
+            padding-right: 24px;
+            font-size: 32px;
+        }
+
+        .connect2 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .connect2 input {
+            color: #000000;
+            padding: 1rem;
+            padding-right: 500px;
+
+        }
+
+        .connect2 p {
+            color: #c7c7c7;
+        }
+
+        .connect3 {
+            margin-top: 50px;
+        }
+
+        .connect3 button {
+            border-radius: 50px;
+            padding: 20px 50px;
+            background-color: #7a99e9;
+            border: solid #7a99e9;
+        }
+        .connect3 button:hover{
+            cursor: pointer;
+            transform: translateY(-5px);
+        }
+
+        .ad {
+            display: inline block;
+            color: #ffffff;
+            margin-bottom: 80px;
+            padding-left: 1150px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar-section">
+        <div class="menu-bar1">
+            <h1>SAWIT KULBOON</h1>
+        </div>
+        <div class="menu-bar2">
+            <a href="#">Work</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="Work-section">
+        <div class="Work-section1">
+            <h1>HI, I AM </h1>
+            <h1>Sawit K.</h1>
+            <p>นักพัฒนาเว็บไซต์ฝั่งฟรอนท์เอนด์จากประเทศไทย ที่มีความหลงใหลในการสร้าง
+                เว็บไซต์ที่เข้าถึงได้และเป็นมิตรกับผู้ใช้</p>
+            <div class="Contact">
+                <h3>CONTACT ME</h3>
+                <div class="icon-bar">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="img1">
+            <img src="./img2/image 3.png" alt="me1">
+        </div>
+    </div>
+    <hr color="#484848" class="hr2">
+    <div class="About">
+        <div class="About-me">
+            <h1>ABOUT ME</h1>
+        </div>
+        <div class="About-me1">
+            <h3 class="TTT">ผมเป็นนักพัฒนาเว็บไซต์ฝั่งฟรอนท์เอนด์ที่ทำงานอยู่ในกรุงเทพฯ กำลังมองหาโอกาสที่น่าตื่นเต้น
+                ในการ
+                ทำงานมีพื้นฐานการศึกษาด้าน วิศวกรรมซอฟต์แวร์</h3>
+            <p>ชอบให้ความสำคัญกับการเข้าถึง (accessibility) เมื่อพัฒนาเว็บไซต์ มีความกระตือรือร้นและอยากรู้
+                อยากเห็นเกี่ยวกับการแก้ปัญหาต่างๆ ปัจจุบันกำลังศึกษาเรียนรู้เกี่ยวกับ React.js และการออกแบบ
+                เว็บไซต์เล็กน้อยเมื่อไม่ได้เขียนโปรแกรม ดิฉัน/ผมชอบเล่นฟุตบอล ถ่ายภาพ และเล่นเกม FIFA, Diablo
+                กำลังเรียนรู้เพิ่มเติมเพื่อพัฒนาทักษะอยู่เสมอ</p>
+            <div class="resume">
+                <h3>DOWNLOAD RESUME</h3>
+                <div class="ICON-RESUME">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="img-resume">
+        <img src="./img2/image 2.png" alt="me2">
+    </div>
+    <hr color="#484848" class="hr2">
+    <div class="my-cap">
+        <div class="my-cap1">
+            <h1>MY CAPABILITIES</h1>
+        </div>
+        <div class="my-cap2">
+            <p>
+                ผมมองหาโอกาสในการเพิ่มทักษะใหม่ๆ อยู่เสมอ ทั้งการพัฒนาฟรอนท์เอนด์ แบล็กเอนต์ การ ออกแบบ UX/UI ฐานข้อมูล
+            </p>
+
+            <div class="my-cap3">
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
+                <a href="#">JAVASCRIP</a>
+                <a href="#">FLUTTER</a>
+                <a href="#">DART</a>
+                <a href="#">loT</a>
+                <a href="#">REACT</a>
+                <a href="#">DATABASE</a>
+            </div>
+        </div>
+    </div>
+    <hr color="#484848" class="hr2">
+    <div class="my-ex">
+        <div class="my-ex1">
+            <h1>MY EXPRERIENCE</h1>
+            <div class="my-ex1.1">
+                <div class="my-ex2">
+                    <h3>Freelance Developer</h3>
+                    <p>Nov 2023-Present</p>
+                    <div class="my-ex3">
+                        <p>พัฒนาและปรับปรุงส่วนติดต่อผู้ใช้สำหรับเว็บแอปพลิเคชันโดยใช้ React.js ทำงานร่วมกับทีม ออกแบบ
+                            UX/UI
+                            เพื่อสร้างประสบการณ์ผู้ใช้ที่น่าประทับใจปรับปรุงความเร็วในการโหลด
+                            เว็บไซต์ด้วยเทคนิคการเพิ่มประสิทธิภาพต่างๆร่วมพัฒนาและดูแลไลบรารีคอมโพเนนต์ภายใน องค์กร</p>
+                    </div>
+                </div>
+                <div class="my-ex4">
+                    <h3>Front-End lntern</h3>
+                    <p>Sep2023-Nov 2023</p>
+                    <div class="my-ex5">
+                        <p>พัฒนาเว็บไซต์ลูกค้าโดยใช้ HTML, CSS และ JavaScript
+                            ช่วยปรับปรุงการเข้าถึง (Accessibility) ของเว็บไซต์ให้สอดคล้องกับมาตรฐาน WCAG
+                            ทำงานร่วมกับทีมแบ็คเอนด์เพื่อเชื่อมต่อ API</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr color="#484848" class="hr2">
+    <div class="connect">
+        <div class="connect1">
+            <h1>LET'S CONNECT</h1>
+            <P>Say hello at sawitkulboon@sau.ac.Touch</P>
+            <p>For more info here's my resume</p>
+            <div class="icon">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+        </div>
+        <div class="connect2">
+            <p class="p1">Name</p>
+            <input type="text" name="Name" placeholder="Name" required>
+            <p class="p2">Email</p>
+            <input type="email" name="Email" placeholder="Email" required>
+            <p class="p3">Subject</p>
+            <input type="text" name="Subject" placeholder="Subject" required>
+            <p class="p4">Message</p>
+            <textarea name="Message" placeholder="Message" rows="5" required></textarea>
+            <div class="connect3">
+                <button type="submit" class="button">SUBMIT</button>
+            </div>
+        </div>
+    </div>
+    <hr color="#484848" class="hr2">
+    <div class="ad">
+        <h3>@ 2025 Created by SAU-Dev-Team</h3>
+    </div>
+</body>
+
+</html>

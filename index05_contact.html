@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sawit_sV05</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Monomaniac+One&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Monomaniac+One&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lora';
+            background-color: #0a0a0a;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            padding: 20px 0;
+            margin-top: 50px;
+            position: relative;
+            z-index: 10;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'inter';
+            font-size: 32px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .logo:hover {
+            font-weight: bold;
+            background: linear-gradient(45deg, yellow, orangered);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 200px;
+        }
+
+        .nav-menu li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .nav-menu li a:hover {
+            color: #ffd700;
+            transition: all 0.3s;
+            transform: translateY(-2px);
+        }
+
+        .nav-menu li a.active {
+            color: #f4f3f3;
+        }
+
+        .nav-menu li a.active:hover {
+            color: yellow;
+            transition: all 0.3s;
+            transform: translateY(-2px);
+        }
+
+        .cta-button {
+            background: transparent;
+            border: 1px solid black;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: yellow;
+            color: black;
+            transition: all 0.3s;
+            transform: translateY(-2px);
+        }
+
+        /* Main Content */
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            min-height: 70vh;
+            padding: 60px 0;
+        }
+
+        .page-title {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .page-title:hover {
+            font-weight: bold;
+           
+        }
+
+        .contact-section {
+            margin-top: 50px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .contact-title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        
+
+        .contact-subtitle {
+            font-size: 24px;
+            color: #cccccc;
+            margin-bottom: 80px;
+        }
+
+        
+
+        .contact-items {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 100px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .contact-icon {
+            width: 100px;
+            height: 100px;
+        }
+
+        .contact-icon:hover {
+            transition: all 0.3s;
+            transform: translateY(10px);
+        }
+
+
+        /* Email Icon */
+        .email-icon {
+            background: url('./img5_contact/Profile\ Icon.png') center/cover no-repeat;
+        }
+
+        /* Location Icon */
+        .location-icon {
+            background: url('./img5_contact/Group\ 510.png') center/100px 100px no-repeat;
+        }
+
+
+        /* Profile Icon */
+        .profile-icon {
+            background: url('./img5_contact/Group\ 511.png') center/cover no-repeat;
+            position: relative;
+        }
+
+        .contact-text {
+            font-size: 14px;
+            color: #cccccc;
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .contact-text:hover {
+            font-weight: bold;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">SAWIT SAU</div>
+                <ul class="nav-menu">
+                    <li><a href="index05_Home.html">Home</a></li>
+                    <li><a href="index05_Aboutme.html">About</a></li>
+                    <li><a href="index05_portfolio.html">Portfolio</a></li>
+                </ul>
+                <a href="index05_contact.html" class="cta-button active">Let's talk</a>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <h1 class="page-title">Contact</h1>
+
+            <div class="contact-section">
+                <h2 class="contact-title">Let's Connect</h2>
+                <p class="contact-subtitle">Don't be a stranger! Say hello and let's collaborate</p>
+
+                <div class="contact-items">
+                    <div class="contact-item">
+                        <div class="contact-icon email-icon"></div>
+                        <p class="contact-text">SawitK@gmail.com</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon location-icon"></div>
+                        <p class="contact-text">Thailand, Bangkok</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon profile-icon"></div>
+                        <p class="contact-text">SAWIT SAU</p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+</body>
+
+</html>
